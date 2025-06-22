@@ -1,13 +1,553 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zelion Cricket - Premium Cricket Gear for Champions</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Zelion Cricket - Premium Cricket Gear & Equipment for Champions | Best Cricket Bats, Pads & Accessories</title>
+    <meta name="description" content="Discover Zelion Cricket's premium cricket gear including handcrafted English willow bats, professional pads, and complete cricket kits. Trusted by international players worldwide. Free shipping on orders over ₹5000.">
+    <meta name="keywords" content="cricket gear, cricket bat, cricket pads, cricket equipment, English willow bat, professional cricket gear, cricket accessories, Zelion cricket, premium cricket equipment, cricket kit">
+    <meta name="author" content="Zelion Cricket">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Zelion Cricket - Premium Cricket Gear for Champions">
+    <meta property="og:description" content="Experience the perfect blend of innovation, quality, and performance with Zelion cricket gear designed for champions who demand excellence.">
+    <meta property="og:image" content="/images/product-kit.png">
+    <meta property="og:url" content="https://zelioncricket.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Zelion Cricket">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Zelion Cricket - Premium Cricket Gear for Champions">
+    <meta name="twitter:description" content="Experience the perfect blend of innovation, quality, and performance with Zelion cricket gear designed for champions who demand excellence.">
+    <meta name="twitter:image" content="/images/product-kit.png">
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon-32x32.png">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="styles/main.css" as="style">
+    <link rel="preload" href="/images/product-kit.png" as="image">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Zelion Cricket",
+        "url": "https://zelioncricket.com",
+        "logo": "/images/favicon-32x32.png",
+        "description": "Premium cricket gear manufacturer specializing in handcrafted English willow bats and professional cricket equipment.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-9876543210",
+            "contactType": "customer service",
+            "email": "contact@zelioncricket.com"
+        },
+        "sameAs": [
+            "https://instagram.com/zelioncricket",
+            "https://facebook.com/zelioncricket"
+        ]
+    }
+    </script>
+    
+    <!-- Performance Optimization -->
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="//images.pexels.com">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header>
+        <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+            <div class="navbar-container">
+                <div class="logo-container">
+                    <img src="/images/favicon-32x32.png" alt="Zelion Cricket Logo" class="nav-logo" width="40" height="40">
+                    <span class="logo-text">ZELION</span>
+                </div>
+                
+                <ul class="nav-links" id="nav-links" role="menubar">
+                    <li role="none"><a href="#home" role="menuitem" aria-label="Go to Home section">Home</a></li>
+                    <li role="none"><a href="#about" role="menuitem" aria-label="Go to About section">About</a></li>
+                    <li role="none"><a href="#products" role="menuitem" aria-label="Go to Products section">Products</a></li>
+                    <li role="none"><a href="#offers" role="menuitem" aria-label="Go to Offers section">Offers</a></li>
+                    <li role="none"><a href="#contact" role="menuitem" aria-label="Go to Contact section">Contact</a></li>
+                </ul>
+
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <i class="fas fa-bars" id="menu-icon" aria-hidden="true"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="home-section" aria-labelledby="hero-title">
+            <div class="home-content">
+                <div class="home-text">
+                    <div class="home-badge">
+                        <i class="fas fa-star badge-icon" aria-hidden="true"></i>
+                        <span>Premium Cricket Gear</span>
+                    </div>
+                    
+                    <h1 id="hero-title" class="home-title">
+                        Crafted for
+                        <span class="title-gradient"> Champions</span>
+                    </h1>
+                    
+                    <p class="home-subtitle">
+                        Experience the perfect blend of innovation, quality, and performance. 
+                        Zelion cricket gear is designed for players who demand excellence.
+                    </p>
+                    
+                    <div class="home-buttons">
+                        <button class="btn-primary" onclick="scrollToSection('products')" aria-label="Explore our cricket products">
+                            Explore Products
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        </button>
+                        <button class="btn-secondary" onclick="scrollToSection('about')" aria-label="Learn about our story">
+                            Our Story
+                        </button>
+                    </div>
+                </div>
+
+                <div class="home-visual">
+                    <div class="hero-image-container">
+                        <img src="/images/product-kit.png" alt="Premium Zelion cricket equipment including bats, pads, and accessories" class="hero-image" width="500" height="400" loading="eager">
+                        <div class="hero-glow" aria-hidden="true"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section" aria-labelledby="about-title">
+            <div class="section-container">
+                <div class="about-header">
+                    <h2 id="about-title" class="section-title">About Zelion</h2>
+                    <p class="section-subtitle">
+                        Zelion isn't just a cricket brand—it's a statement of elite performance, 
+                        refined design, and innovation. Crafted for champions, our gear blends 
+                        modern technology with timeless craftsmanship.
+                    </p>
+                </div>
+
+                <div class="bento-grid">
+                    <article class="bento-card">
+                        <div class="feature-icon bg-gradient-blue" aria-hidden="true">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="feature-title">Player-Centric Design</h3>
+                        <p class="feature-description">Every product is crafted with feedback from professionals to ensure comfort and control.</p>
+                    </article>
+
+                    <article class="bento-card">
+                        <div class="feature-icon bg-gradient-green" aria-hidden="true">
+                            <i class="fas fa-trending-up"></i>
+                        </div>
+                        <h3 class="feature-title">Cutting-Edge Innovation</h3>
+                        <p class="feature-description">Advanced materials and precision engineering set us apart in durability and performance.</p>
+                    </article>
+
+                    <article class="bento-card">
+                        <div class="feature-icon bg-gradient-purple" aria-hidden="true">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Uncompromised Quality</h3>
+                        <p class="feature-description">Each item undergoes strict quality checks to meet elite international standards.</p>
+                    </article>
+
+                    <article class="bento-card">
+                        <div class="feature-icon bg-gradient-orange" aria-hidden="true">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3 class="feature-title">Craftsmanship & Precision</h3>
+                        <p class="feature-description">Hand-finished products built by experienced artisans for accuracy and finesse.</p>
+                    </article>
+
+                    <article class="bento-card">
+                        <div class="feature-icon bg-gradient-teal" aria-hidden="true">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3 class="feature-title">Sustainable Manufacturing</h3>
+                        <p class="feature-description">Eco-conscious sourcing and processes reflect our responsibility to the planet.</p>
+                    </article>
+
+                    <article class="bento-card">
+                        <div class="feature-icon bg-gradient-indigo" aria-hidden="true">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="feature-title">Trusted Worldwide</h3>
+                        <p class="feature-description">Relied upon by international players and leagues across continents.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products-section" aria-labelledby="products-title">
+            <div class="section-container">
+                <div class="products-header">
+                    <h2 id="products-title" class="section-title">Our Products</h2>
+                    <p class="section-subtitle">
+                        Explore our flagship cricket gear designed for champions who demand excellence.
+                    </p>
+                </div>
+
+                <!-- Product Carousel -->
+                <div class="carousel-container" role="region" aria-label="Product showcase carousel">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-slide active" data-slide="0">
+                            <article class="slide-content">
+                                <div class="slide-image-container">
+                                    <img src="https://images.pexels.com/photos/3657154/pexels-photo-3657154.jpeg" alt="Elite Pro Cricket Bat - Premium English willow cricket bat" class="slide-image" width="400" height="300" loading="lazy">
+                                    <div class="slide-badge">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <span>Best Seller</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="slide-info">
+                                    <h3 class="slide-title">Elite Pro Cricket Bat</h3>
+                                    <p class="slide-description">Handcrafted from premium English willow, this bat delivers exceptional power and precision. Trusted by international players for its perfect balance and superior performance.</p>
+                                    
+                                    <div class="slide-features">
+                                        <span class="feature-tag">English Willow</span>
+                                        <span class="feature-tag">Professional Grade</span>
+                                        <span class="feature-tag">Hand-Finished</span>
+                                    </div>
+                                    
+                                    <div class="slide-footer">
+                                        <span class="slide-price">₹15,999</span>
+                                        <button class="slide-button" aria-label="Add Elite Pro Cricket Bat to cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="carousel-slide" data-slide="1">
+                            <article class="slide-content">
+                                <div class="slide-image-container">
+                                    <img src="https://images.pexels.com/photos/28759016/pexels-photo-28759016.jpeg" alt="Guardian Pro Pads - Professional cricket batting pads" class="slide-image" width="400" height="300" loading="lazy">
+                                    <div class="slide-badge">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <span>Premium</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="slide-info">
+                                    <h3 class="slide-title">Guardian Pro Pads</h3>
+                                    <p class="slide-description">Advanced protection technology meets comfort in these professional-grade batting pads. Lightweight yet durable, offering maximum mobility without compromising safety.</p>
+                                    
+                                    <div class="slide-features">
+                                        <span class="feature-tag">Lightweight Design</span>
+                                        <span class="feature-tag">Superior Protection</span>
+                                        <span class="feature-tag">Moisture-Wicking</span>
+                                    </div>
+                                    
+                                    <div class="slide-footer">
+                                        <span class="slide-price">₹8,999</span>
+                                        <button class="slide-button" aria-label="Add Guardian Pro Pads to cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <div class="carousel-slide" data-slide="2">
+                            <article class="slide-content">
+                                <div class="slide-image-container">
+                                    <img src="https://images.pexels.com/photos/3800517/pexels-photo-3800517.jpeg" alt="Complete Cricket Kit - Professional cricket equipment set" class="slide-image" width="400" height="300" loading="lazy">
+                                    <div class="slide-badge">
+                                        <i class="fas fa-star" aria-hidden="true"></i>
+                                        <span>Complete Set</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="slide-info">
+                                    <h3 class="slide-title">Complete Cricket Kit</h3>
+                                    <p class="slide-description">Everything you need to dominate the field. This comprehensive kit includes our signature bat, protective gear, and premium accessories for the serious cricketer.</p>
+                                    
+                                    <div class="slide-features">
+                                        <span class="feature-tag">Full Equipment</span>
+                                        <span class="feature-tag">Professional Quality</span>
+                                        <span class="feature-tag">Travel Case Included</span>
+                                    </div>
+                                    
+                                    <div class="slide-footer">
+                                        <span class="slide-price">₹35,999</span>
+                                        <button class="slide-button" aria-label="Add Complete Cricket Kit to cart">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <button class="carousel-btn carousel-btn-prev" onclick="changeSlide(-1)" aria-label="Previous product">
+                            <i class="fas fa-chevron-left" aria-hidden="true"></i>
+                        </button>
+                        
+                        <button class="carousel-btn carousel-btn-next" onclick="changeSlide(1)" aria-label="Next product">
+                            <i class="fas fa-chevron-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <div class="carousel-indicators" role="tablist" aria-label="Product carousel indicators">
+                        <button class="indicator active" onclick="goToSlide(0)" role="tab" aria-label="Go to product 1" aria-selected="true"></button>
+                        <button class="indicator" onclick="goToSlide(1)" role="tab" aria-label="Go to product 2" aria-selected="false"></button>
+                        <button class="indicator" onclick="goToSlide(2)" role="tab" aria-label="Go to product 3" aria-selected="false"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offers Section -->
+        <section id="offers" class="offers-section" aria-labelledby="offers-title">
+            <div class="section-container">
+                <div class="offers-header">
+                    <div class="offers-badge">
+                        <i class="fas fa-gift" aria-hidden="true"></i>
+                        <span>Exclusive Offers</span>
+                    </div>
+                    <h2 id="offers-title" class="section-title">Special Offers & Deals</h2>
+                    <p class="section-subtitle">
+                        "Zelion gear changed the game for me!" - Professional Cricketer
+                    </p>
+                </div>
+
+                <div class="offers-image-container">
+                    <img src="/images/product-kit.png" alt="Zelion cricket equipment collection showcase" class="offers-image" width="500" height="400" loading="lazy">
+                    <div class="image-glow" aria-hidden="true"></div>
+                </div>
+
+                <!-- Email Subscription -->
+                <div class="email-subscription" id="email-subscription-form">
+                    <div class="subscription-content">
+                        <div class="subscription-info">
+                            <h3 class="subscription-title">Stay Updated with Exclusive Offers</h3>
+                            <p class="subscription-description">
+                                Join our community of cricket enthusiasts and be the first to know about 
+                                new products, special discounts, and exclusive deals.
+                            </p>
+                            <div class="subscription-benefits">
+                                <div class="benefit-item">
+                                    <i class="fas fa-percent" aria-hidden="true"></i>
+                                    <span>Early access to sales</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-gift" aria-hidden="true"></i>
+                                    <span>Exclusive member discounts</span>
+                                </div>
+                                <div class="benefit-item">
+                                    <i class="fas fa-clock" aria-hidden="true"></i>
+                                    <span>New product notifications</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="subscription-form-container">
+                            <form class="subscription-form" id="subscription-form" novalidate>
+                                <div class="selected-offer-display" id="selected-offer" style="display: none;">
+                                    <i class="fas fa-gift" aria-hidden="true"></i>
+                                    <span id="selected-offer-text"></span>
+                                </div>
+                                <div class="email-input-group">
+                                    <label for="email-input" class="sr-only">Email address</label>
+                                    <input type="email" name="email" placeholder="your@gmail.com" class="email-input" id="email-input" required aria-describedby="email-error">
+                                    <button type="submit" class="submit-button" id="submit-button" aria-label="Subscribe to newsletter">
+                                        <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                    </button>
+                                </div>
+                                <div class="error-message" id="error-message" role="alert" aria-live="polite" style="display: none;"></div>
+                            </form>
+                            
+                            <div class="success-message" id="success-message" style="display: none;">
+                                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                                <h4>Successfully Subscribed!</h4>
+                                <p>Thank you for joining our community. Check your email for exclusive offers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Offers Grid -->
+                <div class="offers-bento-grid">
+                    <article class="offer-card" data-offer="Elite Pro Bundle">
+                        <div class="offer-badge">Best Value</div>
+                        <div class="offer-icon bg-gradient-yellow" aria-hidden="true">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="offer-discount">25% OFF</div>
+                        <h3 class="offer-title">Elite Pro Bundle</h3>
+                        <p class="offer-description">Complete cricket kit with premium bat, pads, and gloves for professional players</p>
+                        <div class="offer-features">
+                            <span class="feature-tag">Premium English Willow Bat</span>
+                            <span class="feature-tag">Professional Pads & Gloves</span>
+                            <span class="feature-tag">Complete Protection Set</span>
+                        </div>
+                        <div class="offer-pricing">
+                            <span class="original-price">₹45,999</span>
+                            <span class="offer-price">₹34,499</span>
+                        </div>
+                        <button class="offer-button" onclick="claimOffer('Elite Pro Bundle')" aria-label="Claim Elite Pro Bundle offer">Claim Offer</button>
+                    </article>
+
+                    <article class="offer-card" data-offer="Professional Bat Series">
+                        <div class="offer-badge">Limited Time</div>
+                        <div class="offer-icon bg-gradient-green" aria-hidden="true">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="offer-discount">20% OFF</div>
+                        <h3 class="offer-title">Professional Bat Series</h3>
+                        <p class="offer-description">Handcrafted English willow bats for serious players</p>
+                        <div class="offer-features">
+                            <span class="feature-tag">English Willow Wood</span>
+                            <span class="feature-tag">Hand-Finished</span>
+                            <span class="feature-tag">Professional Grade</span>
+                        </div>
+                        <div class="offer-pricing">
+                            <span class="original-price">₹19,999</span>
+                            <span class="offer-price">₹15,999</span>
+                        </div>
+                        <button class="offer-button" onclick="claimOffer('Professional Bat Series')" aria-label="Claim Professional Bat Series offer">Claim Offer</button>
+                    </article>
+
+                    <article class="offer-card" data-offer="Guardian Protection Set">
+                        <div class="offer-badge">Popular</div>
+                        <div class="offer-icon bg-gradient-blue" aria-hidden="true">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="offer-discount">30% OFF</div>
+                        <h3 class="offer-title">Guardian Protection Set</h3>
+                        <p class="offer-description">Complete protective gear including pads, helmet, and guards</p>
+                        <div class="offer-features">
+                            <span class="feature-tag">Lightweight Design</span>
+                            <span class="feature-tag">Superior Protection</span>
+                            <span class="feature-tag">Moisture-Wicking</span>
+                        </div>
+                        <div class="offer-pricing">
+                            <span class="original-price">₹25,999</span>
+                            <span class="offer-price">₹18,199</span>
+                        </div>
+                        <button class="offer-button" onclick="claimOffer('Guardian Protection Set')" aria-label="Claim Guardian Protection Set offer">Claim Offer</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+            <div class="section-container">
+                <div class="contact-header">
+                    <h2 id="contact-title" class="section-title">Get in Touch</h2>
+                    <p class="section-subtitle">
+                        Have questions or feedback? We'd love to hear from you and help you 
+                        find the perfect cricket gear for your game.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <article class="contact-card">
+                        <div class="contact-icon bg-gradient-blue" aria-hidden="true">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="contact-title">Email Us</h3>
+                        <p class="contact-description">Reach out to our team anytime for inquiries or support.</p>
+                        <a href="mailto:contact@zelioncricket.com" class="contact-link" aria-label="Send email to contact@zelioncricket.com">
+                            contact@zelioncricket.com
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <article class="contact-card">
+                        <div class="contact-icon bg-gradient-pink" aria-hidden="true">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3 class="contact-title">Follow Us</h3>
+                        <p class="contact-description">Stay updated with our latest gear drops and cricket insights.</p>
+                        <a href="https://instagram.com/zelioncricket" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Follow us on Instagram">
+                            @zelioncricket
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                    </article>
+
+                    <article class="contact-card">
+                        <div class="contact-icon bg-gradient-green" aria-hidden="true">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3 class="contact-title">Customer Support</h3>
+                        <p class="contact-description">Need help with an order? Our support team is here to assist.</p>
+                        <a href="tel:+919876543210" class="contact-link" aria-label="Call customer support">
+                            +91 98765 43210
+                            <i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="/images/favicon-32x32.png" alt="Zelion Cricket Logo" width="32" height="32">
+                        <span>ZELION</span>
+                    </div>
+                    <p class="footer-description">Premium cricket gear crafted for champions who demand excellence.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#offers">Offers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><a href="mailto:contact@zelioncricket.com">contact@zelioncricket.com</a></li>
+                        <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                        <li>Mumbai, India</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zelion Cricket. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="https://instagram.com/zelioncricket" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://facebook.com/zelioncricket" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts/main.js" defer></script>
+</body>
 </html>
