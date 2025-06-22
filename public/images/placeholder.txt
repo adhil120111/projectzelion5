@@ -1,0 +1,10 @@
+# Placeholder file for images directory
+# Add your actual images here:
+# - logo.png (40x40px) - Zelion logo for navbar
+# - product-kit - Hero section cricket equipment image
+# - cricket-kit.jpg - Product showcase image
+
+# For demo purposes, you can use these Pexels URLs:
+# Hero image: https://images.pexels.com/photos/1263348/pexels-photo-1263348.jpeg
+# Cricket kit: https://images.pexels.com/photos/1263349/pexels-photo-1263349.jpeg
+# Logo: Create a simple logo or use a cricket ball icon
